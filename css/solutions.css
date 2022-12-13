@@ -38,14 +38,14 @@
 .ex-5-square:active{
     transform: scale(0.5);
 }
-/* Esercio 6 */
+/* Esercizio 6 */
 .ex-6-img{
     transition:0s;
 }
 .ex-6-img:hover{
     filter: grayscale(2);
 }
-/* Esercio 7 */
+/* Esercizio 7 */
 .ex-7-img{
     transition:1s;
     transition-timing-function: ease-out;
@@ -102,6 +102,121 @@
     0% {
         transform: rotate(0);
     }  
+}
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: line;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes line {
+    0% {
+        top:-10px;
+        left:10px;
+    }  
+    40% {
+        top:-10px;
+        left:40px;
+    }  
+    80% {
+        top:-10px;
+        left:100px; 
+    } 
+    
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom-line;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes bottom-line {
+    0% {
+        bottom:-10px;
+        right:20%;
+    }  
+    40% {
+        bottom:-10px;
+        right:50%;
+    }  
+    70% {
+        bottom:-10px;
+        right:60%;   
+    } 
+    80% {
+        bottom:-10px;
+        right:70%;   
+    }   
+}
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: long-line;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count :infinite;
+}
+@keyframes long-line {
+    0% {
+        top:-10px;
+        left:10%;
+    }  
+  
+    30% {
+        top:-10px;
+        left:91%; 
+    } 
+   
+    50% {
+        top: 62px;
+        left:91%; 
+    } 
+    70% {
+        top:62px;
+        left:-8%; 
+    } 
+    90% {
+        top:-19px;
+        left:-8%; 
+    }  
+    100% {
+        top:-10px;
+        left:10%; 
+    }    
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: bottom-long-line;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count :infinite;
+}
+@keyframes bottom-long-line {
+    0% {
+        bottom:-10px;
+        right:20%;
+    }  
+
+    30% {
+        bottom:-10px;
+        right:78%;
+    }  
+
+    50% {
+        bottom:63px;
+        right:78%;   
+    }   
+  
+    70% {
+        bottom:63px;
+        right:-26%;   
+    } 
+    90% {
+        bottom:-13px;
+        right:-26%;   
+    } 
+    
+    100%{
+        bottom:-10px;
+        right:20%;
+    }
 }
 
 
