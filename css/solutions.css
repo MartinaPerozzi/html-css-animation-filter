@@ -116,7 +116,7 @@
     }  
     40% {
         top:-10px;
-        left:40px;
+        left:60%;
     }  
     80% {
         top:-10px;
@@ -134,18 +134,15 @@
         bottom:-10px;
         right:20%;
     }  
+   
     40% {
         bottom:-10px;
-        right:50%;
-    }  
-    70% {
-        bottom:-10px;
-        right:60%;   
+        right:61%;   
     } 
     80% {
         bottom:-10px;
-        right:70%;   
-    }   
+        right:100px;   
+    } 
 }
 /* Esercizio 13 */
 .ex-13-button:hover .ex-13-top-white{
